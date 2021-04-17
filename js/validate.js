@@ -16,12 +16,12 @@ function validate(event) {
   var latValid, lngValid;
 
 
-  if (lat <= -90 || 90 <= lat) {
+  if (lat < -90 || 90 < lat || isNaN(lat)=== true ) {
     latValid = false;
     document.getElementById("latInvalid").style.display = "inline";
   }else (latValid = true)
 
-  if (lng <= -180 || 180 <= lng) {
+  if (lng < -180 || 180 < lng || isNaN(lng)=== true) {
     lngValid = false;
     document.getElementById("lngInvalid").style.display = "inline";
   }else (lngValid = true)
