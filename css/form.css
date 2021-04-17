@@ -20,3 +20,7 @@ legend{
 .required{
     color: red;
 }
+
+input{
+    height:19px;
+}
